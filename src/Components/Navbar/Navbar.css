@@ -1,0 +1,90 @@
+
+.leftSection {
+    color: white;
+    font-size: 20px;
+}
+
+.pagesLinks {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.pagesLinks::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: rgb(214, 72, 96);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+.pagesLinks:hover::after{
+    width: 100%;
+    transition : all 0.5s
+}
+
+.leftSection span {
+    color: rgb(214, 72, 96);
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+}
+.activate{
+    border-bottom: 3px solid rgb(214, 72, 96);
+}
+.nameLink{
+    text-decoration: none;
+    color: white;
+}
+.menuBtn{
+    background-color:transparent;
+    color: white;
+}
+.nav-item{
+    padding: 20px 0px;
+}
+.menuBtn {
+  border: none ;     
+
+}
+@media only screen and (min-width : 768px){
+    .rightSection{
+        display: block;
+    }
+    .smallScreenNav{
+        display: none;
+    }
+}
+@media only screen and (max-width : 767px){
+    .rightSection{
+        display: none;
+    }
+    .smallScreenNav{
+        display: block;
+    }
+    .navbarSection{
+        background-image: linear-gradient(to right, rgb(61, 44, 44) , rgb(214, 72, 96));
+        height: 10vh;
+    }
+    .offcanvas-end{
+        background-image: linear-gradient(to right, rgb(61, 44, 44)  , rgb(214, 72, 96));
+        opacity: 0.8;
+    }
+    .nameLink{
+        color: white;
+        font-family: 'Bree Serif', serif;
+
+    }
+    .nameLink span{
+        color: rgb(214, 72, 96);
+    }
+    .resumeAnchor{
+    padding: 2px;
+}
+    
+}
+@media only screen and (max-width:410px){
+    .navbarSection{
+        max-width: 100%;
+    }
+}

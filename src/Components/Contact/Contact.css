@@ -1,0 +1,23 @@
+
+.from-control{
+    outline: none;
+}
+.form-control::placeholder{
+    color:slategray !important;
+}
+.form-control[type=text]:focus{
+    border: none;
+}
+.contactIcons{
+    color:rgb(214, 72, 96);
+cursor:pointer;
+
+}
+.contactText{
+    vertical-align:text-bottom;
+cursor:pointer;
+}
+.contactText:hover{
+    text-decoration: underline;
+}
+

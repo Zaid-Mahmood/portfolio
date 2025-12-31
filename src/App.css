@@ -1,0 +1,40 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+    color: white;
+    font-size: 15px;
+    background-color: black;
+    overflow: hidden;
+    height: fit-content;
+}
+.verticalBackground{
+    background-color: black;
+}
+
+.menus li {
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    bottom: -6px;
+    width: 0%;
+    height: 3px;
+    text-decoration: underline;
+    background: rgb(214, 72, 96);
+    transition: 0.5s;
+}
+
+li:hover::after {
+    width: 100%;
+}

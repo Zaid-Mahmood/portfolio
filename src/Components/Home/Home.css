@@ -1,0 +1,95 @@
+
+.homeWidth{
+    width: 100vw;
+}
+.firstName {
+    color: rgb(214, 72, 96);
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+}
+
+.mySpecs,
+.myDescription {
+    text-align: justify;
+    color: white;
+    max-width: 100%;
+}
+
+.typedHeight {
+    height: 6em !important;
+}
+
+.introSection {
+    margin-top: 10em;
+}
+
+.resumePdf {
+    border: 1px solid #ff004f;
+    background-color: transparent;
+    color: #ff004f;
+    padding: 14px 0;
+    border-radius: 8px;
+    transition: transform 0.5s;
+}
+
+.resumePdf:hover {
+    background-color: #ff004f;
+    color: white;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.resumeAnchor {
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (min-width : 768px) {
+
+    .largeSizeIntroSection {
+        display: flex;
+        align-items: center;
+    }
+
+    .smallSizeIntroSection {
+        display: none;
+    }
+    
+}
+
+@media (min-width : 300px) and (max-width : 767px) {
+
+    .largeSizeIntroSection {
+        display: none;
+    }
+    
+    .smallSizeIntroSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .verticalBackground{
+        margin: 0;
+        }
+    .myDescription,
+    .firstName,
+    .resumePdf {
+        font-size: 10px;
+        display: grid;
+        grid-template-columns: max-content;
+        padding: 0;
+    }
+    .mySpecs{
+        display: none;
+    }
+    .mySpecsMobile{
+        display: block;
+        height: 5em;
+        width: 5em;
+    }
+}
+
+
+
+
