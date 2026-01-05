@@ -36,6 +36,22 @@
     flex-basis: 2em;
 }
 
+.zoomOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.zoomOverlay img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
 @media only screen and (max-width: 767px){
     .photoBg{
         width: 50%;
