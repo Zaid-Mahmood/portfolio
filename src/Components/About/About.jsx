@@ -109,7 +109,7 @@ function About() {
                         </div>
 
 
-                        <p className='courseTitle'><b>IT Specialist Javascript</b></p>
+                        <p className='courseTitle'><b>IT Specialist Javascript from Pearson</b></p>
                       </div>
                       <div className='d-flex education text-secondary text-uppercase align-items-center'>
                         <p className='courseYear mb-0'><b>2021</b></p>
